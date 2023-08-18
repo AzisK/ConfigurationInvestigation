@@ -1,0 +1,13 @@
+reviews:  
+  article_type:
+    - music
+    - sports
+  fields_to_translate:
+    - title
+    - pros_text
+    - cons_text
+    - text
+descriptions: 
+  article_type: design
+  fields_to_translate:
+    - content
