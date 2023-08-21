@@ -41,9 +41,10 @@ class CarReviewTranslationEtl:
 
 
 class ReviewsTranslateCooking:
+    # model = 'is not defined'
     @property
     def serializer(self):
         return CookingSerializer(**TRANSL_CFG.models[self.model], target_lang=self.target_lang)
 
 
-# ReviewsTranslateCooking can already know it has to use 'reviews' model, we don't need to tell it.  Any other value would also be a mistake
+# ReviewsTranslateCooking can already know it has to use 'reviews' model, we don't need to tell it. Right now it ias passed from the ETL CarReviewTranslationEtl though not visible from this code example. Any other value would also be a mistake
