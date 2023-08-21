@@ -1,13 +1,14 @@
 reviews:  
-  article_type:
+  article_type: !!python/tuple
     - music
     - sports
-  fields_to_translate:
+  fields_to_translate: !!python/tuple
     - title
     - pros_text
     - cons_text
     - text
 descriptions: 
-  article_type: design
-  fields_to_translate:
+  article_type: !!python/tuple
+    - design
+  fields_to_translate: !!python/tuple
     - content
